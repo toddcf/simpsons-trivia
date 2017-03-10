@@ -210,10 +210,10 @@ var questionArray = [{
 var checkAnswer = function() {
 	// Hide question.
 	// Hide multiple choice answers.
-	// If answer was correct:
+	// If answer was correct && questionTimer > 0:
 		correctScore++;
 		// "Woo-Hoo!! That's right:"
-	// Else (if answer was incorrect or timer ran out):
+	// Else (if answer was incorrect || timer ran out):
 		incorrectScore++;
 		// "D'oh! The correct answer was:"
 	// Display correct answer (regardless of whether they answered correctly or not).
@@ -235,6 +235,7 @@ var game = function() {
 	// Push questions to HTML, one at a time:
 	for (var i = 0; i < questionArray.length; i++) {
 		// Hide all other text and images at the beginning of each loop.
+		// Display "Question " + (indexOf(questionArray[i]) + 1) + " of " + (questionArray.length + 1);
 		// Display questionArray[i].question;
 		// Display multiple choice answers -- is there a more concise way?
 			// Display questionArray[i].answers[0];
