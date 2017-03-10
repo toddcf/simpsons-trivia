@@ -19,7 +19,7 @@ var questionArray = [{
 			"Hank Scorpio"
 		],
 		correctAnswer: "Hank Scorpio",
-		picture: "../images/hank_scorpio_posing.jpg"
+		picture: "../img/hank_scorpio_posing.jpg"
 	},
 
 	{
@@ -31,7 +31,7 @@ var questionArray = [{
 			"He thought it was the Christian thing to do."
 		],
 		correctAnswer: "A tornado hit Springfield and destroyed ONLY his house.  When the townspeople banded together to rebuild it, they did a piss-poor job, and Ned lost his marbles.",
-		picture: "../images/ned_flanders_asylum.jpg"
+		picture: "../img/ned_flanders_asylum.jpg"
 	},
 
 	{
@@ -43,7 +43,7 @@ var questionArray = [{
 			"It was one of the terms of his parole."
 		],
 		correctAnswer: "He caused a meltdown in a nuclear reactor simulator that had no actual radioactive material in it.",
-		picture: "../images/nuclear_inspection_simulator_van.png"
+		picture: "../img/nuclear_inspection_simulator_van.png"
 	},
 
 	{
@@ -55,7 +55,7 @@ var questionArray = [{
 			"\"You'll do.\""
 		],
 		correctAnswer: "\"I choo-choo-choose you,\" with a picture of a train.",
-		picture: "../images/choo_choo_choose_you.png"
+		picture: "../img/choo_choo_choose_you.png"
 	},
 
 	{
@@ -67,7 +67,7 @@ var questionArray = [{
 			"The kids got put on curfew for breaking curfew."
 		],
 		correctAnswer: "Homer and his drunken friends trashed the elementary school, and everyone assumed it was done by child vandals.",
-		picture: "../images/homer_drunk_driving.jpg"
+		picture: "../img/homer_drunk_driving.jpg"
 	},
 
 	{
@@ -80,7 +80,7 @@ var questionArray = [{
 			"All of these."
 		],
 		correctAnswer: "All of these.",
-		picture: "../images/homer_simpson_taxes.jpg"
+		picture: "../img/homer_simpson_taxes.jpg"
 	},
 
 	{
@@ -92,7 +92,7 @@ var questionArray = [{
 			"His coworkers (Lenny and Carl) dared him to after Mr. Burns said he would fund any employee’s education."
 		],
 		correctAnswer: "He was reading billboards on \"new billboard day\" and saw Krusty the Klown\'s advertisement.",
-		picture: "../images/krustys_clown_college_billboard.png"
+		picture: "../img/krustys_clown_college_billboard.png"
 	},
 
 	{
@@ -104,7 +104,7 @@ var questionArray = [{
 			"He bought her a lemur."
 		],
 		correctAnswer: "He helped her break into a museum.",
-		picture: "../images/lost_our_lisa.png"
+		picture: "../img/lost_our_lisa.png"
 	},
 
 	{
@@ -116,7 +116,7 @@ var questionArray = [{
 			"Armed robbery."
 		],
 		correctAnswer: "By posing as \"Count Homer\" and test driving a Bentley.",
-		picture: "../images/count_homer.jpg"
+		picture: "../img/count_homer.jpg"
 	},
 
 	{
@@ -128,7 +128,7 @@ var questionArray = [{
 			"Lee Carvallo\'s Putting Challenge"
 		],
 		correctAnswer: "Bonestorm",
-		picture: "../images/bonestorm.jpg"
+		picture: "../img/bonestorm.jpg"
 	},
 	
 	{
@@ -140,7 +140,7 @@ var questionArray = [{
 			"Ayahuasca"
 		],
 		correctAnswer: "Guatamalan Insanity Peppers",
-		picture: "../images/wiggum_pepper.jpg"
+		picture: "../img/wiggum_pepper.jpg"
 	},
 	
 	{
@@ -152,7 +152,7 @@ var questionArray = [{
 			"The Star Killers"
 		],
 		correctAnswer: "The Stonecutters",
-		picture: "../images/stonecutters.png"
+		picture: "../img/stonecutters.png"
 	},
 
 	{
@@ -164,7 +164,7 @@ var questionArray = [{
 			"A Rube Goldberg machine."
 		},
 		correctAnswer: "A perpetual motion machine.",
-		picture: "../images/perpetual_motion_machine.jpg"
+		picture: "../img/perpetual_motion_machine.jpg"
 	},
 	
 	{
@@ -176,7 +176,7 @@ var questionArray = [{
 			"An American Gladiator named Pyro."
 		],
 		correctAnswer: "An American Gladiator named Pyro.",
-		picture: "../images/pyro_and_gyro.png"
+		picture: "../img/pyro_and_gyro.png"
 	},
 
 	{
@@ -188,7 +188,7 @@ var questionArray = [{
 			"He won a bet that Mr. Burns couldn’t think of his name."
 		],
 		correctAnswer: "He got his weight above 300 pounds and claimed disability.",
-		picture: "../images/king_size_homer.png"
+		picture: "../img/king_size_homer.png"
 	},
 	
 	{
