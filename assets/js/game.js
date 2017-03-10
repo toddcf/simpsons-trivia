@@ -204,6 +204,15 @@ var questionArray = [{
 ];
 
 
+// TEST CODE TO BE DELETED LATER:
+	// Push to HTML:
+	document.getElementById("question").textContent	= questionArray[0].question;
+	document.getElementById("a").textContent		= questionArray[0].answers[0];
+	document.getElementById("b").textContent		= questionArray[1].answers[1];
+	document.getElementById("c").textContent		= questionArray[2].answers[2];
+	document.getElementById("d").textContent		= questionArray[3].answers[3];
+
+
 // HELPER FUNCTIONS
 
 // What to display when round ends:
