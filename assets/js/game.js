@@ -203,6 +203,7 @@ var questionArray = [{
 	}	
 ];
 
+
 // HELPER FUNCTIONS
 
 // What to display when round ends:
@@ -219,15 +220,47 @@ var checkAnswer = function() {
 	// Display image that accompanies correct answer.
 	// Display correctScore.
 	// Display incorrectScore.
-	// Start answerTimer. (Only continue after answerTimer reaches 0.)
+	// Start (and display) answerTimer. (Only continue after answerTimer reaches 0.)
 };
 
 
 // MAIN PROCESSES
-
+var game = function() {
+	// Set game to active:
+	active = true;
+	// Reset all scores to 0 in case this is a replay:
+	correctScore	= 0;
+	incorrectScore	= 0;
+	
+	// Push questions to HTML, one at a time:
+	for (var i = 0; i < questionArray.length; i++) {
+		// Hide all other text and images at the beginning of each loop.
+		// Display questionArray[i].question;
+		// Display multiple choice answers -- is there a more concise way?
+			// Display questionArray[i].answers[0];
+			// Display questionArray[i].answers[1];
+			// Display questionArray[i].answers[2];
+			// Display questionArray[i].answers[3];
+		// Start (and display) questionTimer.
+		// When questionTimer reaches 0:
+		checkAnswer();
+		// I THINK THE EVENT HANDLERS BELOW ARE ENOUGH TO DEAL WITH USER CLICKS, AND I SHOULDN'T HAVE TO DEAL WITH THEM HERE?
+	}
+	// Once the loop has completed, show player their final tallies:
+		// Game is now over, so set active to false:
+		active = false;
+		// Hide everything else in the div.
+		// Display correctScore;
+		// Display incorrectScore;
+		// Calculate percentage right (maybe using Homer math). Include humorous comment.
+		// Invite to play again.
+};
 
 
 // EVENT HANDLERS
+
+// When user clicks "Enter Springfield" or "Play Again" to start game:
+	game();
 
 // When user clicks an answer:
 	// Stop questionTimer.
