@@ -199,12 +199,36 @@ var questionArray = [{
 			"Lionel Hutz\'s Discount Gun Emporium.",
 			"Target (with a human silhouette logo instead of a round target)."
 		],
-		picture: "../images/bloodbath_and_beyond.png"
+		picture: "../img/bloodbath_and_beyond.png"
 	}	
 ];
 
 // HELPER FUNCTIONS
 
+// What to display when round ends:
+var checkAnswer = function() {
+	// Hide question.
+	// Hide multiple choice answers.
+	// If answer was correct:
+		correctScore++;
+		// "Woo-Hoo!! That's right:"
+	// Else (if answer was incorrect or timer ran out):
+		incorrectScore++;
+		// "D'oh! The correct answer was:"
+	// Display correct answer (regardless of whether they answered correctly or not).
+	// Display image that accompanies correct answer.
+	// Display correctScore.
+	// Display incorrectScore.
+	// Start answerTimer. (Only continue after answerTimer reaches 0.)
+};
 
 
 // MAIN PROCESSES
+
+
+
+// EVENT HANDLERS
+
+// When user clicks an answer:
+	// Stop questionTimer.
+	checkAnswer();
