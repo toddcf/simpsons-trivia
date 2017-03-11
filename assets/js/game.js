@@ -16,6 +16,7 @@ var answerTimer		= 5000; /*5 seconds*/
 
 // TRIVIA QUESTIONS
 var questionArray = [{
+		id: 1,
 		question:	"Homer\'s supervillain boss was named...",
 		answers: [
 			"Ernst Stavro Blofeld",
@@ -28,6 +29,7 @@ var questionArray = [{
 	},
 
 	{
+		id: 2,
 		question: "Why did Ned Flanders check himself into a mental hospital?",
 		answers: [
 			"A tornado hit Springfield and destroyed ONLY his house.  When the townspeople banded together to rebuild it, they did a piss-poor job, and Ned lost his marbles.",
@@ -40,6 +42,7 @@ var questionArray = [{
 	},
 
 	{
+		id: 3,
 		question:	"Why did Homer have to go \"back\" to college?",
 		answers: [
 			"He won a mandatory scholarship from a radio call-in show on KBBT.",
@@ -52,6 +55,7 @@ var questionArray = [{
 	},
 
 	{
+		id: 4,
 		question: "What did Lisa\'s Valentine\'s Day card to Ralph Wiggum say?",
 		answers: [
 			"\"I choo-choo-choose you,\" with a picture of a train.",
@@ -64,6 +68,7 @@ var questionArray = [{
 	},
 
 	{
+		id: 5,
 		question: "Why did all the kids in Springfield get put on a citywide curfew?",
 		answers: [
 			"Bart drove a tractor through the school while blasting Alice Cooper\'s \"School’s Out.\"",
@@ -76,6 +81,7 @@ var questionArray = [{
 	},
 
 	{
+		id: 6,
 		question: "What deductions did Homer claim on his taxes?",
 		answers: [
 			"Marge requires twenty-four hour nursing care.",
@@ -89,6 +95,7 @@ var questionArray = [{
 	},
 
 	{
+		id: 7,
 		question: "What gave Homer the idea to go to clown college?",
 		answers: [
 			"He was reading billboards on \"new billboard day\" and saw Krusty the Klown\'s advertisement.",
@@ -101,6 +108,7 @@ var questionArray = [{
 	},
 
 	{
+		id: 8,
 		question: "How did Homer make it up to Lisa after Bart glued a bunch of novelty items to his face and caused her to miss an event she was really looking forward to?",
 		answers: [
 			"He suffered through a vegetarian meal with her.",
@@ -113,6 +121,7 @@ var questionArray = [{
 	},
 
 	{
+		id: 9,
 		question: "How did Homer score coupons to a spa for himself and Marge?",
 		answers: [
 			"In a raffle while visiting Grandpa at the old folks home.",
@@ -125,6 +134,7 @@ var questionArray = [{
 	},
 
 	{
+		id: 10,
 		question: "What video game did Bart try to shoplift?",
 		answers: [
 			"Touch of Death",
@@ -137,6 +147,7 @@ var questionArray = [{
 	},
 	
 	{
+		id: 11,
 		question: "What did Homer ingest before going on a vision quest?",
 		answers: [
 			"Guatamalan Insanity Peppers",
@@ -149,6 +160,7 @@ var questionArray = [{
 	},
 	
 	{
+		id: 12,
 		question: "What secret society did Homer join?",
 		answers: [
 			"The Moderately-Priced Masons",
@@ -161,6 +173,7 @@ var questionArray = [{
 	},
 
 	{
+		id: 13,
 		question: "What did Lisa build in her free time while the teachers union was on strike?",
 		answers: [
 			"A perpetual motion machine.",
@@ -173,6 +186,7 @@ var questionArray = [{
 	},
 	
 	{
+		id: 14,
 		question: "After Milhouse\'s parents got divorced, his mother started dating...",
 		answers: [
 			"Her sewing instructor.",
@@ -185,6 +199,7 @@ var questionArray = [{
 	},
 
 	{
+		id: 15,
 		question: "How did Homer achieve work-from-home status?",
 		answers: [
 			"He got his weight above 300 pounds and claimed disability.",
@@ -197,6 +212,7 @@ var questionArray = [{
 	},
 	
 	{
+		id: 16,
 		question: "At which store did Homer purchase a gun?",
 		answers: [
 			"Guns \"R\" Us.",
@@ -254,7 +270,7 @@ var game = function() {
 	// Push questions to HTML, one at a time:
 	for (var i = 0; i < questionArray.length; i++) {
 		// Hide all other text and images at the beginning of each loop.
-		// Display "Question " + (indexOf(questionArray[i]) + 1) + " of " + (questionArray.length + 1);
+		// Display "Question [i] of 16": "Question " + (indexOf(questionArray[i]) + 1) + " of " + (questionArray.length + 1);
 		// Display questionArray[i].question;
 		// Display multiple choice answers -- is there a more concise way?
 			// Display questionArray[i].answers[0];
