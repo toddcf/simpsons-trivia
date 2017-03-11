@@ -1,5 +1,3 @@
-alert("game.js file is linked!");
-
 // SEE ALSO:
 	// Udemy JavaScript, lesson 74 "Adding a new item to the UI."
 	// Illegal Dice Game
@@ -215,11 +213,11 @@ var questionArray = [{
 var pushToHtml = function() {
 	// Push to HTML:
 	// document.querySelector("#question").textContent	= "Question 1"/*questionArray[0].question*/
-	$("#question").text("Question 1");
-	document.querySelector("#a").text		= questionArray[0].answers[0].value;
-	document.querySelector("#b").text		= questionArray[0].answers[1];
-	document.querySelector("#c").text		= questionArray[0].answers[2];
-	document.querySelector("#d").text		= questionArray[0].answers[3];
+	$("#question").text(questionArray[0].question);
+	$("#a").text(questionArray[0].answers[0]);
+	$("#b").text(questionArray[0].answers[1]);
+	$("#c").text(questionArray[0].answers[2]);
+	$("#d").text(questionArray[0].answers[3]);
 };
 
 pushToHtml();
