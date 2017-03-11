@@ -1,13 +1,20 @@
+alert("game.js file is linked!");
+
+// SEE ALSO:
+	// Udemy JavaScript, lesson 74 "Adding a new item to the UI."
+	// Illegal Dice Game
+
 // GLOBAL VARIABLES
 
 // Game is defaulted to inactive until player clicks start button:
-var active			= false;
+var gameActive		= false;
 // Scores set to zero for beginning of game:
 var correctScore	= 0;
 var incorrectScore	= 0;
 // Countdown timers:
 var questionTimer	= 60000; /*60 seconds*/
 var answerTimer		= 5000; /*5 seconds*/
+
 
 // TRIVIA QUESTIONS
 var questionArray = [{
@@ -157,12 +164,12 @@ var questionArray = [{
 
 	{
 		question: "What did Lisa build in her free time while the teachers union was on strike?",
-		answers: {
+		answers: [
 			"A perpetual motion machine.",
 			"An AI robot.",
 			"A recycling plant.",
 			"A Rube Goldberg machine."
-		},
+		],
 		correctAnswer: "A perpetual motion machine.",
 		picture: "../img/perpetual_motion_machine.jpg"
 	},
@@ -205,14 +212,19 @@ var questionArray = [{
 
 
 // TEST CODE TO BE DELETED LATER:
+var pushToHtml = function() {
 	// Push to HTML:
-	document.getElementById("question").textContent	= questionArray[0].question;
-	document.getElementById("a").textContent		= questionArray[0].answers[0];
-	document.getElementById("b").textContent		= questionArray[1].answers[1];
-	document.getElementById("c").textContent		= questionArray[2].answers[2];
-	document.getElementById("d").textContent		= questionArray[3].answers[3];
+	// document.querySelector("#question").textContent	= "Question 1"/*questionArray[0].question*/
+	$("#question").text("Question 1");
+	document.querySelector("#a").text		= questionArray[0].answers[0].value;
+	document.querySelector("#b").text		= questionArray[0].answers[1];
+	document.querySelector("#c").text		= questionArray[0].answers[2];
+	document.querySelector("#d").text		= questionArray[0].answers[3];
+};
 
+pushToHtml();
 
+/*
 // HELPER FUNCTIONS
 
 // What to display when round ends:
@@ -236,7 +248,7 @@ var checkAnswer = function() {
 // MAIN PROCESSES
 var game = function() {
 	// Set game to active:
-	active = true;
+	gameActive = true;
 	// Reset all scores to 0 in case this is a replay:
 	correctScore	= 0;
 	incorrectScore	= 0;
@@ -258,7 +270,7 @@ var game = function() {
 	}
 	// Once the loop has completed, show player their final tallies:
 		// Game is now over, so set active to false:
-		active = false;
+		gameActive = false;
 		// Hide everything else in the div.
 		// Display correctScore;
 		// Display incorrectScore;
@@ -275,3 +287,4 @@ var game = function() {
 // When user clicks an answer:
 	// Stop questionTimer.
 	checkAnswer();
+*/
